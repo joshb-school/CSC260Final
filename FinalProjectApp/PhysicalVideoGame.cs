@@ -131,7 +131,7 @@ namespace FinalProjectApp
 
 		public override void DisplayTotal()
 		{
-			throw new NotImplementedException();
+            throw new NotImplementedException();
 		}
 
 		public override void EditItem()

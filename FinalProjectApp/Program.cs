@@ -26,6 +26,7 @@ namespace FinalProjectApp
             physicalVideoGame.Add(physicalVideoGame1);
             PhysicalVideoGame physicalVideoGame2 = new PhysicalVideoGame("Mass Effect", "Josh", "Xbox 360", 2007, "RPG", "", "Main Shelf", "No", false, true, true);
             physicalVideoGame.Add(physicalVideoGame2);
+            Console.WriteLine($"physical games in list: {physicalVideoGame.Count()}");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
