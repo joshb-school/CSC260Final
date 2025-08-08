@@ -47,6 +47,16 @@
             this.userInputTxtBox = new System.Windows.Forms.TextBox();
             this.userInputLbl = new System.Windows.Forms.Label();
             this.enterUserInputBtn = new System.Windows.Forms.Button();
+            this.physicalMediaWatchingChk = new System.Windows.Forms.CheckBox();
+            this.digitalMediaVideoGamesChk = new System.Windows.Forms.CheckBox();
+            this.digitalMediaMusicChk = new System.Windows.Forms.CheckBox();
+            this.digitalMediaWatchingChk = new System.Windows.Forms.CheckBox();
+            this.digitalMediaSoftwareChk = new System.Windows.Forms.CheckBox();
+            this.digitalMediaOtherChk = new System.Windows.Forms.CheckBox();
+            this.otherMiscChk = new System.Windows.Forms.CheckBox();
+            this.otherMediaAccessoriesChk = new System.Windows.Forms.CheckBox();
+            this.otherVideoGameAccessoriesChk = new System.Windows.Forms.CheckBox();
+            this.otherConsolesAndPlayersChk = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // mainLabel
@@ -102,6 +112,7 @@
             this.mediaTypesLbl.Size = new System.Drawing.Size(127, 16);
             this.mediaTypesLbl.TabIndex = 6;
             this.mediaTypesLbl.Text = "Media Types:";
+            this.mediaTypesLbl.Click += new System.EventHandler(this.mediaTypesLbl_Click);
             // 
             // physicalMediaChk
             // 
@@ -118,11 +129,11 @@
             // 
             this.physicalMediaOtherItemsChk.AutoSize = true;
             this.physicalMediaOtherItemsChk.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.physicalMediaOtherItemsChk.Location = new System.Drawing.Point(998, 236);
+            this.physicalMediaOtherItemsChk.Location = new System.Drawing.Point(998, 257);
             this.physicalMediaOtherItemsChk.Name = "physicalMediaOtherItemsChk";
-            this.physicalMediaOtherItemsChk.Size = new System.Drawing.Size(59, 15);
+            this.physicalMediaOtherItemsChk.Size = new System.Drawing.Size(122, 15);
             this.physicalMediaOtherItemsChk.TabIndex = 15;
-            this.physicalMediaOtherItemsChk.Text = "Other";
+            this.physicalMediaOtherItemsChk.Text = "Other Physical";
             this.physicalMediaOtherItemsChk.UseVisualStyleBackColor = true;
             // 
             // physicalMediaReadingChk
@@ -151,7 +162,7 @@
             // 
             this.physicalMediaMusicChk.AutoSize = true;
             this.physicalMediaMusicChk.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.physicalMediaMusicChk.Location = new System.Drawing.Point(998, 173);
+            this.physicalMediaMusicChk.Location = new System.Drawing.Point(998, 174);
             this.physicalMediaMusicChk.Name = "physicalMediaMusicChk";
             this.physicalMediaMusicChk.Size = new System.Drawing.Size(59, 15);
             this.physicalMediaMusicChk.TabIndex = 18;
@@ -173,7 +184,7 @@
             // 
             this.otherItemsChk.AutoSize = true;
             this.otherItemsChk.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.otherItemsChk.Location = new System.Drawing.Point(980, 386);
+            this.otherItemsChk.Location = new System.Drawing.Point(980, 442);
             this.otherItemsChk.Name = "otherItemsChk";
             this.otherItemsChk.Size = new System.Drawing.Size(101, 15);
             this.otherItemsChk.TabIndex = 20;
@@ -184,7 +195,7 @@
             // 
             this.digitalMediaChk.AutoSize = true;
             this.digitalMediaChk.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.digitalMediaChk.Location = new System.Drawing.Point(980, 303);
+            this.digitalMediaChk.Location = new System.Drawing.Point(980, 295);
             this.digitalMediaChk.Name = "digitalMediaChk";
             this.digitalMediaChk.Size = new System.Drawing.Size(115, 15);
             this.digitalMediaChk.TabIndex = 21;
@@ -226,24 +237,26 @@
             // 
             // userInputTxtBox
             // 
-            this.userInputTxtBox.Location = new System.Drawing.Point(92, 170);
+            this.userInputTxtBox.Location = new System.Drawing.Point(107, 170);
             this.userInputTxtBox.Name = "userInputTxtBox";
-            this.userInputTxtBox.Size = new System.Drawing.Size(304, 20);
+            this.userInputTxtBox.Size = new System.Drawing.Size(289, 20);
             this.userInputTxtBox.TabIndex = 25;
             this.userInputTxtBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // userInputLbl
             // 
             this.userInputLbl.AutoSize = true;
-            this.userInputLbl.Location = new System.Drawing.Point(21, 175);
+            this.userInputLbl.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userInputLbl.Location = new System.Drawing.Point(22, 174);
             this.userInputLbl.Name = "userInputLbl";
-            this.userInputLbl.Size = new System.Drawing.Size(58, 13);
+            this.userInputLbl.Size = new System.Drawing.Size(82, 11);
             this.userInputLbl.TabIndex = 27;
-            this.userInputLbl.Text = "User input:";
+            this.userInputLbl.Text = "User Input:";
             this.userInputLbl.Click += new System.EventHandler(this.userItemDetailInputLbl_Click);
             // 
             // enterUserInputBtn
             // 
+            this.enterUserInputBtn.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enterUserInputBtn.Location = new System.Drawing.Point(402, 168);
             this.enterUserInputBtn.Name = "enterUserInputBtn";
             this.enterUserInputBtn.Size = new System.Drawing.Size(57, 22);
@@ -252,11 +265,131 @@
             this.enterUserInputBtn.UseVisualStyleBackColor = true;
             this.enterUserInputBtn.Click += new System.EventHandler(this.enterUserInputBtn_Click);
             // 
+            // physicalMediaWatchingChk
+            // 
+            this.physicalMediaWatchingChk.AutoSize = true;
+            this.physicalMediaWatchingChk.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.physicalMediaWatchingChk.Location = new System.Drawing.Point(998, 236);
+            this.physicalMediaWatchingChk.Name = "physicalMediaWatchingChk";
+            this.physicalMediaWatchingChk.Size = new System.Drawing.Size(80, 15);
+            this.physicalMediaWatchingChk.TabIndex = 29;
+            this.physicalMediaWatchingChk.Text = "Watching";
+            this.physicalMediaWatchingChk.UseVisualStyleBackColor = true;
+            // 
+            // digitalMediaVideoGamesChk
+            // 
+            this.digitalMediaVideoGamesChk.AutoSize = true;
+            this.digitalMediaVideoGamesChk.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.digitalMediaVideoGamesChk.Location = new System.Drawing.Point(998, 316);
+            this.digitalMediaVideoGamesChk.Name = "digitalMediaVideoGamesChk";
+            this.digitalMediaVideoGamesChk.Size = new System.Drawing.Size(101, 15);
+            this.digitalMediaVideoGamesChk.TabIndex = 30;
+            this.digitalMediaVideoGamesChk.Text = "Video Games";
+            this.digitalMediaVideoGamesChk.UseVisualStyleBackColor = true;
+            // 
+            // digitalMediaMusicChk
+            // 
+            this.digitalMediaMusicChk.AutoSize = true;
+            this.digitalMediaMusicChk.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.digitalMediaMusicChk.Location = new System.Drawing.Point(998, 337);
+            this.digitalMediaMusicChk.Name = "digitalMediaMusicChk";
+            this.digitalMediaMusicChk.Size = new System.Drawing.Size(59, 15);
+            this.digitalMediaMusicChk.TabIndex = 31;
+            this.digitalMediaMusicChk.Text = "Music";
+            this.digitalMediaMusicChk.UseVisualStyleBackColor = true;
+            // 
+            // digitalMediaWatchingChk
+            // 
+            this.digitalMediaWatchingChk.AutoSize = true;
+            this.digitalMediaWatchingChk.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.digitalMediaWatchingChk.Location = new System.Drawing.Point(998, 358);
+            this.digitalMediaWatchingChk.Name = "digitalMediaWatchingChk";
+            this.digitalMediaWatchingChk.Size = new System.Drawing.Size(80, 15);
+            this.digitalMediaWatchingChk.TabIndex = 32;
+            this.digitalMediaWatchingChk.Text = "Watching";
+            this.digitalMediaWatchingChk.UseVisualStyleBackColor = true;
+            // 
+            // digitalMediaSoftwareChk
+            // 
+            this.digitalMediaSoftwareChk.AutoSize = true;
+            this.digitalMediaSoftwareChk.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.digitalMediaSoftwareChk.Location = new System.Drawing.Point(998, 379);
+            this.digitalMediaSoftwareChk.Name = "digitalMediaSoftwareChk";
+            this.digitalMediaSoftwareChk.Size = new System.Drawing.Size(80, 15);
+            this.digitalMediaSoftwareChk.TabIndex = 33;
+            this.digitalMediaSoftwareChk.Text = "Software";
+            this.digitalMediaSoftwareChk.UseVisualStyleBackColor = true;
+            // 
+            // digitalMediaOtherChk
+            // 
+            this.digitalMediaOtherChk.AutoSize = true;
+            this.digitalMediaOtherChk.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.digitalMediaOtherChk.Location = new System.Drawing.Point(998, 400);
+            this.digitalMediaOtherChk.Name = "digitalMediaOtherChk";
+            this.digitalMediaOtherChk.Size = new System.Drawing.Size(115, 15);
+            this.digitalMediaOtherChk.TabIndex = 34;
+            this.digitalMediaOtherChk.Text = "Other Digital";
+            this.digitalMediaOtherChk.UseVisualStyleBackColor = true;
+            // 
+            // otherMiscChk
+            // 
+            this.otherMiscChk.AutoSize = true;
+            this.otherMiscChk.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherMiscChk.Location = new System.Drawing.Point(998, 526);
+            this.otherMiscChk.Name = "otherMiscChk";
+            this.otherMiscChk.Size = new System.Drawing.Size(115, 15);
+            this.otherMiscChk.TabIndex = 35;
+            this.otherMiscChk.Text = "Miscellaneous";
+            this.otherMiscChk.UseVisualStyleBackColor = true;
+            // 
+            // otherMediaAccessoriesChk
+            // 
+            this.otherMediaAccessoriesChk.AutoSize = true;
+            this.otherMediaAccessoriesChk.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherMediaAccessoriesChk.Location = new System.Drawing.Point(998, 505);
+            this.otherMediaAccessoriesChk.Name = "otherMediaAccessoriesChk";
+            this.otherMediaAccessoriesChk.Size = new System.Drawing.Size(143, 15);
+            this.otherMediaAccessoriesChk.TabIndex = 36;
+            this.otherMediaAccessoriesChk.Text = "Media Accessories";
+            this.otherMediaAccessoriesChk.UseVisualStyleBackColor = true;
+            // 
+            // otherVideoGameAccessoriesChk
+            // 
+            this.otherVideoGameAccessoriesChk.AutoSize = true;
+            this.otherVideoGameAccessoriesChk.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherVideoGameAccessoriesChk.Location = new System.Drawing.Point(998, 484);
+            this.otherVideoGameAccessoriesChk.Name = "otherVideoGameAccessoriesChk";
+            this.otherVideoGameAccessoriesChk.Size = new System.Drawing.Size(178, 15);
+            this.otherVideoGameAccessoriesChk.TabIndex = 37;
+            this.otherVideoGameAccessoriesChk.Text = "Video Game Accessories";
+            this.otherVideoGameAccessoriesChk.UseVisualStyleBackColor = true;
+            // 
+            // otherConsolesAndPlayersChk
+            // 
+            this.otherConsolesAndPlayersChk.AutoSize = true;
+            this.otherConsolesAndPlayersChk.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherConsolesAndPlayersChk.Location = new System.Drawing.Point(998, 463);
+            this.otherConsolesAndPlayersChk.Name = "otherConsolesAndPlayersChk";
+            this.otherConsolesAndPlayersChk.Size = new System.Drawing.Size(164, 15);
+            this.otherConsolesAndPlayersChk.TabIndex = 38;
+            this.otherConsolesAndPlayersChk.Text = "Consoles and Players";
+            this.otherConsolesAndPlayersChk.UseVisualStyleBackColor = true;
+            // 
             // FinalProjectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1180, 672);
+            this.Controls.Add(this.otherConsolesAndPlayersChk);
+            this.Controls.Add(this.otherVideoGameAccessoriesChk);
+            this.Controls.Add(this.otherMediaAccessoriesChk);
+            this.Controls.Add(this.otherMiscChk);
+            this.Controls.Add(this.digitalMediaOtherChk);
+            this.Controls.Add(this.digitalMediaSoftwareChk);
+            this.Controls.Add(this.digitalMediaWatchingChk);
+            this.Controls.Add(this.digitalMediaMusicChk);
+            this.Controls.Add(this.digitalMediaVideoGamesChk);
+            this.Controls.Add(this.physicalMediaWatchingChk);
             this.Controls.Add(this.enterUserInputBtn);
             this.Controls.Add(this.userInputLbl);
             this.Controls.Add(this.userInputTxtBox);
@@ -278,6 +411,7 @@
             this.Controls.Add(this.mainLabel);
             this.Name = "FinalProjectForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FinalProjectForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,6 +438,16 @@
         private System.Windows.Forms.TextBox userInputTxtBox;
         private System.Windows.Forms.Label userInputLbl;
         private System.Windows.Forms.Button enterUserInputBtn;
+        private System.Windows.Forms.CheckBox physicalMediaWatchingChk;
+        private System.Windows.Forms.CheckBox digitalMediaVideoGamesChk;
+        private System.Windows.Forms.CheckBox digitalMediaMusicChk;
+        private System.Windows.Forms.CheckBox digitalMediaWatchingChk;
+        private System.Windows.Forms.CheckBox digitalMediaSoftwareChk;
+        private System.Windows.Forms.CheckBox digitalMediaOtherChk;
+        private System.Windows.Forms.CheckBox otherMiscChk;
+        private System.Windows.Forms.CheckBox otherMediaAccessoriesChk;
+        private System.Windows.Forms.CheckBox otherVideoGameAccessoriesChk;
+        private System.Windows.Forms.CheckBox otherConsolesAndPlayersChk;
     }
 }
 
