@@ -21,7 +21,12 @@ namespace FinalProjectApp
 		private string _readingType;
 		private int _releaseYear;
 
-		public override void DisplayTotal()
+        public PhysicalReading()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void DisplayTotal()
 		{
 			throw new NotImplementedException();
 		}
@@ -37,11 +42,6 @@ namespace FinalProjectApp
 		}
 
 		public override void DeleteItem()
-		{
-			throw new NotImplementedException();
-		}
-
-		public void PhysicalReading()
 		{
 			throw new NotImplementedException();
 		}

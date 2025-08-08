@@ -1,0 +1,10 @@
+C:\Users\joshb\Desktop\DSU\Summer 2025\CSC260\HW\Final Project\FinalProjectApp\obj\Debug\FinalProjectApp.csproj.AssemblyReference.cache
+C:\Users\joshb\Desktop\DSU\Summer 2025\CSC260\HW\Final Project\FinalProjectApp\obj\Debug\FinalProjectApp.FinalProjectForm.resources
+C:\Users\joshb\Desktop\DSU\Summer 2025\CSC260\HW\Final Project\FinalProjectApp\obj\Debug\FinalProjectApp.Properties.Resources.resources
+C:\Users\joshb\Desktop\DSU\Summer 2025\CSC260\HW\Final Project\FinalProjectApp\obj\Debug\FinalProjectApp.csproj.GenerateResource.cache
+C:\Users\joshb\Desktop\DSU\Summer 2025\CSC260\HW\Final Project\FinalProjectApp\obj\Debug\FinalProjectApp.csproj.CoreCompileInputs.cache
+C:\Users\joshb\Desktop\DSU\Summer 2025\CSC260\HW\Final Project\FinalProjectApp\bin\Debug\FinalProjectApp.exe.config
+C:\Users\joshb\Desktop\DSU\Summer 2025\CSC260\HW\Final Project\FinalProjectApp\bin\Debug\FinalProjectApp.exe
+C:\Users\joshb\Desktop\DSU\Summer 2025\CSC260\HW\Final Project\FinalProjectApp\bin\Debug\FinalProjectApp.pdb
+C:\Users\joshb\Desktop\DSU\Summer 2025\CSC260\HW\Final Project\FinalProjectApp\obj\Debug\FinalProjectApp.exe
+C:\Users\joshb\Desktop\DSU\Summer 2025\CSC260\HW\Final Project\FinalProjectApp\obj\Debug\FinalProjectApp.pdb

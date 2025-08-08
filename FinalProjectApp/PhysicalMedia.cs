@@ -17,7 +17,12 @@ namespace FinalProjectApp
 		private string _physicalSubtype;
 		private int _releaseYear;
 
-		public override void AddItem()
+        public PhysicalMedia()
+        {
+
+        }
+
+        public override void AddItem()
 		{
 			throw new NotImplementedException();
 		}
@@ -28,11 +33,6 @@ namespace FinalProjectApp
 		}
 
 		public override void EditItem()
-		{
-			throw new NotImplementedException();
-		}
-
-		public void PhysicalMedia()
 		{
 			throw new NotImplementedException();
 		}

@@ -23,7 +23,12 @@ namespace FinalProjectApp
 		private string _specialVariant;
 		private bool _working;
 
-		public override void AddItem()
+        public PhysicalMusic()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void AddItem()
 		{
 			throw new NotImplementedException();
 		}
@@ -39,11 +44,6 @@ namespace FinalProjectApp
 		}
 
 		public override void EditItem()
-		{
-			throw new NotImplementedException();
-		}
-
-		public void PhysicalMusic()
 		{
 			throw new NotImplementedException();
 		}

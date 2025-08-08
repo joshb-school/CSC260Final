@@ -41,6 +41,13 @@
             this.physicalMediaVideoGamesChk = new System.Windows.Forms.CheckBox();
             this.otherItemsChk = new System.Windows.Forms.CheckBox();
             this.digitalMediaChk = new System.Windows.Forms.CheckBox();
+            this.addItemDropdown = new System.Windows.Forms.ComboBox();
+            this.addItemSelectLbl = new System.Windows.Forms.Label();
+            this.userInputPromptLbl = new System.Windows.Forms.Label();
+            this.userInputTxtBox = new System.Windows.Forms.TextBox();
+            this.userInputLbl = new System.Windows.Forms.Label();
+            this.enterUserInputBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // mainLabel
@@ -57,7 +64,7 @@
             // AddItemButton
             // 
             this.AddItemButton.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddItemButton.Location = new System.Drawing.Point(57, 103);
+            this.AddItemButton.Location = new System.Drawing.Point(202, 103);
             this.AddItemButton.Name = "AddItemButton";
             this.AddItemButton.Size = new System.Drawing.Size(70, 34);
             this.AddItemButton.TabIndex = 1;
@@ -68,7 +75,7 @@
             // EditItemBtn
             // 
             this.EditItemBtn.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditItemBtn.Location = new System.Drawing.Point(133, 103);
+            this.EditItemBtn.Location = new System.Drawing.Point(278, 103);
             this.EditItemBtn.Name = "EditItemBtn";
             this.EditItemBtn.Size = new System.Drawing.Size(85, 34);
             this.EditItemBtn.TabIndex = 3;
@@ -79,7 +86,7 @@
             // DeleteItemBtn
             // 
             this.DeleteItemBtn.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteItemBtn.Location = new System.Drawing.Point(224, 103);
+            this.DeleteItemBtn.Location = new System.Drawing.Point(369, 103);
             this.DeleteItemBtn.Name = "DeleteItemBtn";
             this.DeleteItemBtn.Size = new System.Drawing.Size(85, 34);
             this.DeleteItemBtn.TabIndex = 4;
@@ -185,11 +192,88 @@
             this.digitalMediaChk.Text = "Digital Media";
             this.digitalMediaChk.UseVisualStyleBackColor = true;
             // 
+            // addItemDropdown
+            // 
+            this.addItemDropdown.FormattingEnabled = true;
+            this.addItemDropdown.Items.AddRange(new object[] {
+            "Physical Video Game",
+            "Physical Music",
+            "Physical Table Game",
+            "Physical Reading",
+            "Other Physical Media"});
+            this.addItemDropdown.Location = new System.Drawing.Point(24, 110);
+            this.addItemDropdown.Name = "addItemDropdown";
+            this.addItemDropdown.Size = new System.Drawing.Size(171, 21);
+            this.addItemDropdown.TabIndex = 22;
+            this.addItemDropdown.SelectedIndexChanged += new System.EventHandler(this.addItemDropdown_SelectedIndexChanged);
+            // 
+            // addItemSelectLbl
+            // 
+            this.addItemSelectLbl.AutoSize = true;
+            this.addItemSelectLbl.Font = new System.Drawing.Font("Lucida Console", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addItemSelectLbl.Location = new System.Drawing.Point(22, 96);
+            this.addItemSelectLbl.Name = "addItemSelectLbl";
+            this.addItemSelectLbl.Size = new System.Drawing.Size(173, 11);
+            this.addItemSelectLbl.TabIndex = 23;
+            this.addItemSelectLbl.Text = "Select Item Type to Add:";
+            // 
+            // userInputPromptLbl
+            // 
+            this.userInputPromptLbl.AutoSize = true;
+            this.userInputPromptLbl.Location = new System.Drawing.Point(21, 196);
+            this.userInputPromptLbl.Name = "userInputPromptLbl";
+            this.userInputPromptLbl.Size = new System.Drawing.Size(0, 13);
+            this.userInputPromptLbl.TabIndex = 24;
+            // 
+            // userInputTxtBox
+            // 
+            this.userInputTxtBox.Location = new System.Drawing.Point(92, 170);
+            this.userInputTxtBox.Name = "userInputTxtBox";
+            this.userInputTxtBox.Size = new System.Drawing.Size(304, 20);
+            this.userInputTxtBox.TabIndex = 25;
+            this.userInputTxtBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // userInputLbl
+            // 
+            this.userInputLbl.AutoSize = true;
+            this.userInputLbl.Location = new System.Drawing.Point(21, 175);
+            this.userInputLbl.Name = "userInputLbl";
+            this.userInputLbl.Size = new System.Drawing.Size(58, 13);
+            this.userInputLbl.TabIndex = 27;
+            this.userInputLbl.Text = "User input:";
+            this.userInputLbl.Click += new System.EventHandler(this.userItemDetailInputLbl_Click);
+            // 
+            // enterUserInputBtn
+            // 
+            this.enterUserInputBtn.Location = new System.Drawing.Point(402, 168);
+            this.enterUserInputBtn.Name = "enterUserInputBtn";
+            this.enterUserInputBtn.Size = new System.Drawing.Size(57, 22);
+            this.enterUserInputBtn.TabIndex = 28;
+            this.enterUserInputBtn.Text = "Enter";
+            this.enterUserInputBtn.UseVisualStyleBackColor = true;
+            this.enterUserInputBtn.Click += new System.EventHandler(this.enterUserInputBtn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(474, 383);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "label1";
+            // 
             // FinalProjectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1180, 672);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.enterUserInputBtn);
+            this.Controls.Add(this.userInputLbl);
+            this.Controls.Add(this.userInputTxtBox);
+            this.Controls.Add(this.userInputPromptLbl);
+            this.Controls.Add(this.addItemSelectLbl);
+            this.Controls.Add(this.addItemDropdown);
             this.Controls.Add(this.digitalMediaChk);
             this.Controls.Add(this.otherItemsChk);
             this.Controls.Add(this.physicalMediaVideoGamesChk);
@@ -225,6 +309,13 @@
         private System.Windows.Forms.CheckBox physicalMediaVideoGamesChk;
         private System.Windows.Forms.CheckBox otherItemsChk;
         private System.Windows.Forms.CheckBox digitalMediaChk;
+        private System.Windows.Forms.ComboBox addItemDropdown;
+        private System.Windows.Forms.Label addItemSelectLbl;
+        private System.Windows.Forms.Label userInputPromptLbl;
+        private System.Windows.Forms.TextBox userInputTxtBox;
+        private System.Windows.Forms.Label userInputLbl;
+        private System.Windows.Forms.Button enterUserInputBtn;
+        private System.Windows.Forms.Label label1;
     }
 }
 

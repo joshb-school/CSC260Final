@@ -15,7 +15,12 @@ namespace FinalProjectApp
 		private string _otherSubtype;
 		private string _owner;
 
-		public override void AddItem()
+        public OtherItem()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void AddItem()
 		{
 			throw new NotImplementedException();
 		}
@@ -30,10 +35,6 @@ namespace FinalProjectApp
 			throw new NotImplementedException();
 		}
 
-		public void OtherItem()
-		{
-			throw new NotImplementedException();
-		}
 
 		public override void DisplayTotal()
 		{

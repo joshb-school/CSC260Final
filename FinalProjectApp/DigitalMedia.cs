@@ -15,17 +15,17 @@ namespace FinalProjectApp
 		private string _name;
 		private string _owner;
 
-		public override void AddItem()
+        public DigitalMedia()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void AddItem()
 		{
 			throw new NotImplementedException();
 		}
 
 		public override void DeleteItem()
-		{
-			throw new NotImplementedException();
-		}
-
-		public void DigitalMedia()
 		{
 			throw new NotImplementedException();
 		}

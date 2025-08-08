@@ -20,8 +20,11 @@ namespace FinalProjectApp
 		private static int _physicalTableGameTotal;
 		private int _releaseYear;
 		private string _tableGameType;
-
-		public override void AddItem()
+        public PhysicalTableGame()
+        {
+            throw new NotImplementedException();
+        }
+        public override void AddItem()
 		{
 			throw new NotImplementedException();
 		}
@@ -37,11 +40,6 @@ namespace FinalProjectApp
 		}
 
 		public override void EditItem()
-		{
-			throw new NotImplementedException();
-		}
-
-		public void PhysicalTableGame()
 		{
 			throw new NotImplementedException();
 		}

@@ -46,14 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DigitalMedia.cs" />
     <Compile Include="FinalProjectForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FinalProjectForm.Designer.cs">
       <DependentUpon>FinalProjectForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item.cs" />
+    <Compile Include="OtherItem.cs" />
+    <Compile Include="PhysicalMedia.cs" />
+    <Compile Include="PhysicalMusic.cs" />
+    <Compile Include="PhysicalReading.cs" />
+    <Compile Include="PhysicalTableGame.cs" />
+    <Compile Include="PhysicalVideoGame.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FinalProjectForm.resx">
+      <DependentUpon>FinalProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +74,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\DigitalMedia.datasource" />
+    <None Include="Properties\DataSources\FinalProjectApp.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\FinalProjectApp.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\FinalProjectForm.datasource" />
+    <None Include="Properties\DataSources\Item.datasource" />
+    <None Include="Properties\DataSources\OtherItem.datasource" />
+    <None Include="Properties\DataSources\PhysicalMedia.datasource" />
+    <None Include="Properties\DataSources\PhysicalMusic.datasource" />
+    <None Include="Properties\DataSources\PhysicalReading.datasource" />
+    <None Include="Properties\DataSources\PhysicalTableGame.datasource" />
+    <None Include="Properties\DataSources\PhysicalVideoGame.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +98,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

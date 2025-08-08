@@ -14,9 +14,8 @@ namespace FinalProjectApp
 		private string _owner;
 		private string _itemNote;
 
-		public void Item()
+		public Item()
 		{
-			throw new NotImplementedException();
 		}
 
 		public virtual void AddItem()
