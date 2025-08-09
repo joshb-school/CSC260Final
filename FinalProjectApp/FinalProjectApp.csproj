@@ -46,7 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsolesAndPlayers.cs" />
     <Compile Include="DigitalMedia.cs" />
+    <Compile Include="DigitalMusic.cs" />
+    <Compile Include="DigitalSoftware.cs" />
+    <Compile Include="DigitalVideoGame.cs" />
+    <Compile Include="DigitalWatching.cs" />
     <Compile Include="FinalProjectForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,14 +59,17 @@
       <DependentUpon>FinalProjectForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Item.cs" />
+    <Compile Include="MediaAccessory.cs" />
     <Compile Include="OtherItem.cs" />
     <Compile Include="PhysicalMedia.cs" />
     <Compile Include="PhysicalMusic.cs" />
     <Compile Include="PhysicalReading.cs" />
     <Compile Include="PhysicalTableGame.cs" />
     <Compile Include="PhysicalVideoGame.cs" />
+    <Compile Include="PhysicalWatching.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VideoGameAccessory.cs" />
     <EmbeddedResource Include="FinalProjectForm.resx">
       <DependentUpon>FinalProjectForm.cs</DependentUpon>
     </EmbeddedResource>

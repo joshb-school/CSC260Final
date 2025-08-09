@@ -22,7 +22,7 @@ namespace FinalProjectApp
             List <DigitalMedia> digitalMedia = new List <DigitalMedia>();
             List <OtherItem> otherItem = new List <OtherItem>();
             
-            PhysicalVideoGame physicalVideoGame1 = new PhysicalVideoGame("Sly 2", "Josh", "Playstation 2", 2004, "Action", "", "Main Shelf", "No", false, true, true);
+            PhysicalVideoGame physicalVideoGame1 = new PhysicalVideoGame("Sly 2", "Bailee", "Playstation 2", 2004, "Action", "", "Main Shelf", "No", false, true, true);
             physicalVideoGame.Add(physicalVideoGame1);
             PhysicalVideoGame physicalVideoGame2 = new PhysicalVideoGame("Mass Effect", "Josh", "Xbox 360", 2007, "RPG", "", "Main Shelf", "No", false, true, true);
             physicalVideoGame.Add(physicalVideoGame2);
